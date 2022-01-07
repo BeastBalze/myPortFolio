@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+
+.content {
+    width: 100%;
+    animation-name: pageLoad;
+    animation-duration: 5s;
+}
+
+@keyframes pageLoad {
+    0%{
+        opacity: 0;
+    }
+    
+    80% {
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+body:hover{
+    cursor: pointer;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 1.2fr 12fr 1.4fr 0.1fr;
+    width: 99%;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 1px solid lavender;
+    border-radius: 10px;
+}
+
+.photo img {
+    padding: 9%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.horizontalLine {
+    display: none;
+}
+
+.name {
+    margin: auto;
+    margin-left: 2%;
+    font-size: 500%;
+    font-family: 'The Nautigal', cursive;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: black;
+}
+
+.navLinks:hover {
+    zoom: 105%;
+    text-decoration: underline;
+}
+
+.container {
+    width: 99%;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 1px solid lavender;
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+
+#containerTitle {
+    padding-left: 1%;
+    font-family: 'Playfair Display';
+}
+
+.paraSum {
+    font-size: 170%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.edu {
+    padding-left: 2%;
+    font-family: 'Island Moments';
+    font-size: 170%;
+    font-weight: lighter;
+}
+
+.container h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.para {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    margin-left: 1%;
+    margin-right: 3%;
+    display: block;
+}
+
+.paraSkills{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    font-size: 170%;
+    font-weight: normal;
+}
+
+.skillsCont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5em;
+}
+
+.prjct {
+    padding-left: 2%;
+    font-family: 'Island Moments';
+    font-size: 270%;
+}
+
+.prjct i {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.prjct i:hover {
+    color: black;
+    zoom: 110%;
+}
+
+li {
+    font-size: 1.3em;
+}
+
+.para i {
+    color: grey;
+    font-size: 0.6em;
+}
+
+.para i:hover {
+    color: black;
+    zoom: 110%;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts a:hover {
+    zoom: 110%;
+    color: rgb(53, 48, 48);
+}
+
+#contactCont {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.imgAni {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation-name: imgDance;
+    transition-duration: 2s;
+}
+
+.imgAni img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    filter: grayscale(100);
+    animation-name: img;
+    animation-duration: 4s;
+    transition: all;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img {
+    
+    0%{
+        filter: grayscale(0);
+        position: fixed;
+    }
+
+    1%{
+        filter: grayscale(0);
+        transform: translateY(0%);
+        width: 200px;
+    }
+
+    25%{
+        filter: grayscale(100);
+        transform: translateY(50%);
+        width: 300px;
+    }
+
+    75%{
+        filter: grayscale(0);
+        transform: translateY(0%);
+        width: 200px;
+    }
+
+    100%{
+        filter: grayscale(100);
+        transform: translateY(75%);
+        width: 0px;
+    }
+
+}
+
+@media (max-width:440px)
+{
+
+    body {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .title{
+        margin: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 30%;
+        margin: auto
+    }
+
+    .photo img {
+        width: 100%;
+    }
+
+    .name {
+        display: inline-block;
+        margin: auto;
+        font-size: 200%;
+        font-family: 'The Nautigal', cursive;
+    }
+
+    #containerTitle {font-size: 30px;}
+
+    .para {font-size: 20px;}
+
+    .paraSkills {font-size: 20px;}
+
+    .paraSum {font-size: 20px;}
+
+    .edu h2 {font-size: 30px;}
+
+    .skillsCont {grid-template-columns: auto auto;}
+
+    #contactCont {grid-template-columns: auto;}
+
+    #contactCont a {font-size: 25px;}
+
+    .nav ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .horizontalLine {
+        display: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
