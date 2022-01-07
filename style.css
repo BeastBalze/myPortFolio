@@ -24,10 +24,6 @@ body {
     }
 }
 
-body:hover{
-    cursor: pointer;
-}
-
 .title {
     display: grid;
     grid-template-columns: 1.2fr 12fr 1.4fr 0.1fr;
