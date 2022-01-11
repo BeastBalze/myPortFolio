@@ -313,4 +313,8 @@ li {
     .navLinks {
         font-size: 12px;
     }
+
+    .para ul {
+        margin-left: 2%;
+    }
 }
